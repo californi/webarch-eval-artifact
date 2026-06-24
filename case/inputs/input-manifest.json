@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "arcassist-adoption-interest-inputs/v1",
+  "caseId": "adoption-interest",
+  "frozenConcernArtifact": "inputs/evolution-concern.md",
+  "artifacts": [
+    {
+      "id": "B1",
+      "category": "baseline_fact",
+      "source": "docs/02-arquitetura.md",
+      "claim": "The project has a Next.js/PWA Web application, NestJS API, and shared packages."
+    },
+    {
+      "id": "B2",
+      "category": "baseline_fact",
+      "source": "docs/01-escopo-funcional.md",
+      "claim": "The complete adoption process and authentication are outside the first iteration."
+    },
+    {
+      "id": "B3",
+      "category": "baseline_fact",
+      "source": "packages/domain/src/animal.ts",
+      "claim": "Animal defines AVAILABLE, IN_TREATMENT, IN_ADOPTION_PROCESS, and ADOPTED."
+    },
+    {
+      "id": "B4",
+      "category": "baseline_gap",
+      "source": "packages/domain/src/animal.ts",
+      "claim": "Current code does not encode permitted Animal status transitions."
+    },
+    {
+      "id": "B5",
+      "category": "web_fact",
+      "source": "apps/web/src/app/animais/[id]/page.tsx",
+      "claim": "The public detail page contains a future-interest link but no implemented form."
+    },
+    {
+      "id": "B6",
+      "category": "web_fact",
+      "source": "apps/api/src/animals/animals.controller.ts",
+      "claim": "The API exposes only Animals endpoints."
+    },
+    {
+      "id": "B7",
+      "category": "planned_concept",
+      "source": "diagrams/modelo-dominio-inicial.mmd",
+      "claim": "Adoptant and AdoptionInterest are planned future concepts related to Animal."
+    },
+    {
+      "id": "W1",
+      "category": "architecture_fact",
+      "source": "docs/07-decisoes-arquiteturais/ADR-002-separacao-front-back-dominio-infra.md",
+      "claim": "Layer responsibilities are separated and domain is framework-independent."
+    },
+    {
+      "id": "W2",
+      "category": "documentation_obligation",
+      "source": "docs/07-decisoes-arquiteturais/ADR-003-documentacao-versionada-adrs-mermaid-prompts.md",
+      "claim": "Relevant architectural changes require versioned documentation and reusable prompts."
+    },
+    {
+      "id": "W3",
+      "category": "planned_increment",
+      "source": "docs/03-backlog-incremental.md",
+      "claim": "Interest registration, adopter registration, and initial screening are planned for a later adoption prototype."
+    },
+    {
+      "id": "W4",
+      "category": "web_gap",
+      "source": "apps/web/src/app/animais/[id]/page.tsx; apps/api/src/animals/animals.controller.ts; packages/domain/src/animal.ts",
+      "claim": "The current system has public Animal data but no applicant-data model or staff-review UI/API."
+    },
+    {
+      "id": "S1",
+      "category": "study_constraint",
+      "source": "inputs/evolution-concern.md",
+      "claim": "Only initial interest is in scope; the complete adoption process is not."
+    },
+    {
+      "id": "S2",
+      "category": "study_constraint",
+      "source": "inputs/web-and-domain-evidence.md",
+      "claim": "Any introduced applicant data must remain outside public animal-profile responses."
+    },
+    {
+      "id": "S3",
+      "category": "study_constraint",
+      "source": "inputs/web-and-domain-evidence.md",
+      "claim": "A proposal must expose, rather than assume, a status-transition policy."
+    },
+    {
+      "id": "Q1",
+      "category": "open_question",
+      "source": "inputs/web-and-domain-evidence.md",
+      "claim": "Consent, retention, duplicate-interest, and API privacy checks require validation."
+    }
+  ]
+}

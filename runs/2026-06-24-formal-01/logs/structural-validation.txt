@@ -1,0 +1,6 @@
+Command:
+node tools/validate-run.mjs runs/2026-06-24-formal-01/raw/condition-C.json case/inputs/input-manifest.json
+
+Output:
+ArcAssist experiment run validation passed.
+Validated 3 alternatives and 15 evidence identifiers.

@@ -1,0 +1,13 @@
+{
+  "name": "webarch-eval-artifact",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node tools/validate-all.mjs",
+    "audit-anonymity": "node tools/validate-all.mjs --anonymity-only"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

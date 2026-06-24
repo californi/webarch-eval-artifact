@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "webarch-evaluation-run-index/v1",
+  "inputManifest": {
+    "path": "../case/inputs/input-manifest.json",
+    "sha256": "82bce551fa01fe826d40c665f3c57009035f508a14b1dc2d85ae412c2e4b7903"
+  },
+  "commonConfiguration": {
+    "modelRequested": "gpt-5.5",
+    "reasoningEffortRequested": "medium",
+    "outputLanguage": "English",
+    "tools": "prohibited by execution instruction",
+    "promptG": {
+      "path": "../prompts/condition-g-generic-request.md",
+      "sha256": "93a831c28eae83401cb8d321829eb74ecfc3849c7f6f3158c357e9f725586bfc"
+    },
+    "promptC": {
+      "path": "../prompts/condition-c-configured-request.md",
+      "sha256": "7da3255e666497bf51e3beb540808f7928f3f8addd48d5347de60110bd25d682"
+    }
+  },
+  "includedPairs": [
+    {
+      "comparisonId": "adoption-interest-formal-01",
+      "conditionG": {
+        "output": "2026-06-24-formal-01/raw/condition-G.md",
+        "sha256": "ad6b6a94e705671fa59ed29202502ddb1ef92d4426eaf875c00e24e337fe68f7"
+      },
+      "conditionC": {
+        "output": "2026-06-24-formal-01/raw/condition-C.json",
+        "sha256": "76c36c5761938ae9e492ceebe769d3fb49c195f5447185865af7fed28a0eb658",
+        "structuralValidation": "passed"
+      }
+    },
+    {
+      "comparisonId": "adoption-interest-formal-02",
+      "conditionG": {
+        "output": "2026-06-24-formal-02/raw/condition-G.md",
+        "sha256": "c0c2bb6ec6e20f98551e3dcb6eaef342b5acbdc4f40ee1e96ba73466260269a1"
+      },
+      "conditionC": {
+        "output": "2026-06-24-formal-02/raw/condition-C.json",
+        "sha256": "5dc26d4e0ab94429dbc1c6fc4a331c049c3cfb7699d325f74f803801f57e7b32",
+        "structuralValidation": "passed"
+      }
+    },
+    {
+      "comparisonId": "adoption-interest-formal-03",
+      "conditionG": {
+        "output": "2026-06-24-formal-03/raw/condition-G.md",
+        "sha256": "de3a9691d42d716c4c793b5e9229f23e20665315cc88580584eecbecc2d08c33"
+      },
+      "conditionC": {
+        "output": "2026-06-24-formal-03/raw/condition-C.json",
+        "sha256": "bd210b320a9b4560fe9f34db6a37eb0abf7100c3c7ad5f769eae90ff23dac318",
+        "structuralValidation": "passed"
+      }
+    }
+  ],
+  "excludedPairs": [
+    {
+      "comparisonId": "adoption-interest-pilot-01",
+      "reason": "Output language was not controlled across conditions."
+    }
+  ]
+}

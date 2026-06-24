@@ -1,0 +1,99 @@
+{
+  "manifestVersion": "arcassist-comparison-prompt-variables/v1",
+  "kitId": "arcassist-web-reusable-comparison",
+  "placeholderSyntax": "{{UPPER_SNAKE_CASE}}",
+  "purpose": "Define reusable prompt inputs for a controlled comparison between generic assistance and an ArcAssist-Web configured condition.",
+  "conditions": [
+    {
+      "id": "G",
+      "label": "Generic assistance",
+      "prompt": "condition-g-generic-request.md",
+      "requiredVariables": [
+        "EVOLUTION_CONCERN"
+      ],
+      "mustNotReceive": [
+        "BASELINE_ARCHITECTURE",
+        "WEB_AND_DOMAIN_EVIDENCE"
+      ],
+      "outputFormat": "Markdown"
+    },
+    {
+      "id": "C",
+      "label": "Configured ArcAssist-Web assistance",
+      "prompt": "condition-c-configured-request.md",
+      "requiredVariables": [
+        "BASELINE_ARCHITECTURE",
+        "EVOLUTION_CONCERN",
+        "WEB_AND_DOMAIN_EVIDENCE"
+      ],
+      "outputFormat": "JSON",
+      "outputContract": "arcassist-decision-package/v1"
+    }
+  ],
+  "variables": [
+    {
+      "id": "EVOLUTION_CONCERN",
+      "placeholder": "{{EVOLUTION_CONCERN}}",
+      "requiredBy": [
+        "G",
+        "C"
+      ],
+      "format": "Plain text",
+      "description": "A neutral statement of one Web-system evolution concern.",
+      "contentRequirements": [
+        "Describe the desired evolution and its intended outcome.",
+        "Keep the wording identical for both conditions.",
+        "Do not preselect an architectural solution unless the concern explicitly requires one.",
+        "Do not include unverified facts about the current system."
+      ]
+    },
+    {
+      "id": "BASELINE_ARCHITECTURE",
+      "placeholder": "{{BASELINE_ARCHITECTURE}}",
+      "requiredBy": [
+        "C"
+      ],
+      "format": "Markdown or JSON list of baseline statements",
+      "description": "Architecture facts needed to constrain the recommendation.",
+      "itemShape": {
+        "id": "stable evidence identifier",
+        "source": "repository-relative path, document locator, or other stable source locator",
+        "claim": "bounded factual statement supported by the source",
+        "excerpt": "optional supporting excerpt or precise location"
+      },
+      "contentRequirements": [
+        "Include only facts that are relevant to the concern.",
+        "Separate confirmed facts from unresolved baseline gaps.",
+        "Do not summarize a source more broadly than it supports."
+      ]
+    },
+    {
+      "id": "WEB_AND_DOMAIN_EVIDENCE",
+      "placeholder": "{{WEB_AND_DOMAIN_EVIDENCE}}",
+      "requiredBy": [
+        "C"
+      ],
+      "format": "Markdown or JSON list of evidence items",
+      "description": "Evidence about Web flows, interface and data boundaries, domain rules, quality attributes, and documentation obligations relevant to the concern.",
+      "itemShape": {
+        "id": "stable evidence identifier",
+        "source": "repository-relative path, document locator, or other stable source locator",
+        "kind": "web_flow | interface_boundary | data_visibility | domain_rule | quality_attribute | documentation_obligation | other",
+        "claim": "bounded factual statement supported by the source",
+        "excerpt": "optional supporting excerpt or precise location"
+      },
+      "contentRequirements": [
+        "Use one item per independently traceable claim.",
+        "Include a source locator for every item.",
+        "Do not convert a proposed rule, backlog idea, or open question into an existing-system fact."
+      ]
+    }
+  ],
+  "substitutionRules": [
+    "Replace each placeholder once with its frozen run value.",
+    "Preserve evidence identifiers and source locators exactly in the rendered Condition C prompt.",
+    "Reject a run when a required placeholder is empty or unresolved.",
+    "Do not add project context to Condition G."
+  ],
+  "captureProtocol": "capture-protocol.md"
+}

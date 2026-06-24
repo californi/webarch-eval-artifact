@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "webarch-evaluation-artifact/v1",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "733961d725dbb9949a0c56081b74be6b056cdca54a228e40141b6d051dd63ecb"
+    },
+    {
+      "path": "README.md",
+      "sha256": "0e9fc47d4b10df7d876d59ead87340987c466ca950fc36253451ea5193359c04"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "sha256": "4b051c1ebd525f7cd600383d4ae476539686f41ec153bb6f6b29b1981fc9fb6b"
+    },
+    {
+      "path": "analysis/observed-structural-comparison.md",
+      "sha256": "20666542a87a2eb6455df3630c30c6b5d5502ff8819da8fc156c6cbcf7ff72ee"
+    },
+    {
+      "path": "case/README.md",
+      "sha256": "2e80e5cab98ab89a887788b6d87c8068a6fa420eb54a51f7384f6a12ea4a9bb9"
+    },
+    {
+      "path": "case/inputs/baseline-architecture.md",
+      "sha256": "ccc4d0ec4a3ba2965c47ce3ab8335749273057b6001e1361fbd14ea2fd88ff2c"
+    },
+    {
+      "path": "case/inputs/evolution-concern.md",
+      "sha256": "6d4caae3e7e2ee05daec25ad3d7bd525ad9deb858e82db8b865c56bf8571070c"
+    },
+    {
+      "path": "case/inputs/input-manifest.json",
+      "sha256": "82bce551fa01fe826d40c665f3c57009035f508a14b1dc2d85ae412c2e4b7903"
+    },
+    {
+      "path": "case/inputs/source-evidence-dossier.md",
+      "sha256": "1f1b8ae4db57e167a6e8011d2a2937c03e17d4c817045705002447257e856af8"
+    },
+    {
+      "path": "case/inputs/web-and-domain-evidence.md",
+      "sha256": "ca2548796064ce7021487b54ebeb7b3796fd81631b1e4c29cf435053b37cde81"
+    },
+    {
+      "path": "package.json",
+      "sha256": "28f9521f6f27ef536e0ae8e8c6220561a3504a99757d97b2b7241ba4460d4021"
+    },
+    {
+      "path": "prompts/capture-protocol.md",
+      "sha256": "739780a85a4339b4d69158d9e07073b2822a403a567e090c5bd71282ede06cb4"
+    },
+    {
+      "path": "prompts/condition-c-configured-request.md",
+      "sha256": "7da3255e666497bf51e3beb540808f7928f3f8addd48d5347de60110bd25d682"
+    },
+    {
+      "path": "prompts/condition-g-generic-request.md",
+      "sha256": "93a831c28eae83401cb8d321829eb74ecfc3849c7f6f3158c357e9f725586bfc"
+    },
+    {
+      "path": "prompts/prompt-variable-manifest.json",
+      "sha256": "b127a90b34fde074c91acce2da30ba5d47bcd5993102443b65e86867dcee4540"
+    },
+    {
+      "path": "runs/2026-06-24-formal-01/execution-envelope.md",
+      "sha256": "f3f105f5ed80c681a03390131d007fdd9be51e1f3733e7c7264fd3742c90e38f"
+    },
+    {
+      "path": "runs/2026-06-24-formal-01/logs/structural-validation.txt",
+      "sha256": "76c539006d40337f9d438cc07cc9e188f96029b5a545132ebde2f5539f64be6e"
+    },
+    {
+      "path": "runs/2026-06-24-formal-01/raw/condition-C.json",
+      "sha256": "76c36c5761938ae9e492ceebe769d3fb49c195f5447185865af7fed28a0eb658"
+    },
+    {
+      "path": "runs/2026-06-24-formal-01/raw/condition-G.md",
+      "sha256": "ad6b6a94e705671fa59ed29202502ddb1ef92d4426eaf875c00e24e337fe68f7"
+    },
+    {
+      "path": "runs/2026-06-24-formal-02/execution-envelope.md",
+      "sha256": "f0442d87d094445f9ddfcc11de23bc05c52ef3699dd86979927aa6c353175aea"
+    },
+    {
+      "path": "runs/2026-06-24-formal-02/logs/structural-validation.txt",
+      "sha256": "8484d782f890a7fd6dacfef6dbbeba7206f85618a610a9eeabf5fef454fb8fc0"
+    },
+    {
+      "path": "runs/2026-06-24-formal-02/raw/condition-C.json",
+      "sha256": "5dc26d4e0ab94429dbc1c6fc4a331c049c3cfb7699d325f74f803801f57e7b32"
+    },
+    {
+      "path": "runs/2026-06-24-formal-02/raw/condition-G.md",
+      "sha256": "c0c2bb6ec6e20f98551e3dcb6eaef342b5acbdc4f40ee1e96ba73466260269a1"
+    },
+    {
+      "path": "runs/2026-06-24-formal-03/execution-envelope.md",
+      "sha256": "7fcc0a7ba016147fdcb73bbc5c0be57c164ed434702c5388b299233f498b8cc8"
+    },
+    {
+      "path": "runs/2026-06-24-formal-03/logs/structural-validation.txt",
+      "sha256": "64982a2926837fb1aa98388b30fc9b6d2bdc9acc484393bf97eb7eb24702469f"
+    },
+    {
+      "path": "runs/2026-06-24-formal-03/raw/condition-C.json",
+      "sha256": "bd210b320a9b4560fe9f34db6a37eb0abf7100c3c7ad5f769eae90ff23dac318"
+    },
+    {
+      "path": "runs/2026-06-24-formal-03/raw/condition-G.md",
+      "sha256": "de3a9691d42d716c4c793b5e9229f23e20665315cc88580584eecbecc2d08c33"
+    },
+    {
+      "path": "runs/run-index.json",
+      "sha256": "b5aaa15e390c0d4a7656c8fb67c8fd3c73c9b675633294c2f485b783dc41ef7a"
+    },
+    {
+      "path": "tools/validate-all.mjs",
+      "sha256": "3522f1dfc2620c18192e91ab1273442333bbeb74102219564caa4509fa0ca1f4"
+    },
+    {
+      "path": "tools/validate-run.mjs",
+      "sha256": "1dca06b9fbdf07dbd7a984d9e1519a65ce0e26404738f6082a8d4e0a9bb8a897"
+    }
+  ]
+}
