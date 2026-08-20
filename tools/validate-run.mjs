@@ -3,7 +3,7 @@ import fs from "node:fs";
 const [outputPath, manifestPath] = process.argv.slice(2);
 
 if (!outputPath || !manifestPath) {
-  console.error("Usage: node tools/validate-arcassist-experiment-run.mjs <output.json> <input-manifest.json>");
+  console.error("Usage: node tools/validate-run.mjs <output.json> <input-manifest.json>");
   process.exit(1);
 }
 

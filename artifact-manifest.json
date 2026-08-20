@@ -2,24 +2,20 @@
   "schemaVersion": "webarch-evaluation-artifact/v1",
   "files": [
     {
+      "path": ".gitattributes",
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "2dfb3ede65ee5c7ec064f31726e6a391854146d73874ac434a575864dcc2c328"
+    },
+    {
       "path": ".gitignore",
-      "sha256": "733961d725dbb9949a0c56081b74be6b056cdca54a228e40141b6d051dd63ecb"
-    },
-    {
-      "path": "README.md",
-      "sha256": "0e9fc47d4b10df7d876d59ead87340987c466ca950fc36253451ea5193359c04"
-    },
-    {
-      "path": "REPRODUCE.md",
-      "sha256": "4b051c1ebd525f7cd600383d4ae476539686f41ec153bb6f6b29b1981fc9fb6b"
+      "sha256": "ed5da3bede5a506ea65af139f292273d78e044fa30de23b4cb1136191b643b8c"
     },
     {
       "path": "analysis/observed-structural-comparison.md",
       "sha256": "20666542a87a2eb6455df3630c30c6b5d5502ff8819da8fc156c6cbcf7ff72ee"
-    },
-    {
-      "path": "case/README.md",
-      "sha256": "2e80e5cab98ab89a887788b6d87c8068a6fa420eb54a51f7384f6a12ea4a9bb9"
     },
     {
       "path": "case/inputs/baseline-architecture.md",
@@ -35,15 +31,23 @@
     },
     {
       "path": "case/inputs/source-evidence-dossier.md",
-      "sha256": "1f1b8ae4db57e167a6e8011d2a2937c03e17d4c817045705002447257e856af8"
+      "sha256": "391a9bd79e3c33e85a4cb257d4ed9fd30a4159e4b520796a83021ff744582367"
     },
     {
       "path": "case/inputs/web-and-domain-evidence.md",
       "sha256": "ca2548796064ce7021487b54ebeb7b3796fd81631b1e4c29cf435053b37cde81"
     },
     {
+      "path": "case/README.md",
+      "sha256": "2e80e5cab98ab89a887788b6d87c8068a6fa420eb54a51f7384f6a12ea4a9bb9"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "0f4f8b8c684e6474c9e82b0f641e12cb5bf5e3892639c811d3a2f6e5fde27039"
+    },
+    {
       "path": "package.json",
-      "sha256": "28f9521f6f27ef536e0ae8e8c6220561a3504a99757d97b2b7241ba4460d4021"
+      "sha256": "550dba3f7a501704a0f95e9fc20e570e47ada9dcc6ca623c56fedd7262ed84ea"
     },
     {
       "path": "prompts/capture-protocol.md",
@@ -60,6 +64,14 @@
     {
       "path": "prompts/prompt-variable-manifest.json",
       "sha256": "b127a90b34fde074c91acce2da30ba5d47bcd5993102443b65e86867dcee4540"
+    },
+    {
+      "path": "README.md",
+      "sha256": "c85f2959ddeed8b3241f28a69467fcf88d4948fb328044a8350cfc06c1d13941"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "sha256": "4f9ba33d8e187ee4df3f8a28a7b6792fb0fda17749be2ffa88b5b1d2f32ab744"
     },
     {
       "path": "runs/2026-06-24-formal-01/execution-envelope.md",
@@ -114,12 +126,16 @@
       "sha256": "b5aaa15e390c0d4a7656c8fb67c8fd3c73c9b675633294c2f485b783dc41ef7a"
     },
     {
+      "path": "tools/update-manifest.mjs",
+      "sha256": "a9a5c2c79241fc418cf77047cc7cfc3ffb37cbcc9ec7e9052d80d41620ff1dd1"
+    },
+    {
       "path": "tools/validate-all.mjs",
-      "sha256": "3522f1dfc2620c18192e91ab1273442333bbeb74102219564caa4509fa0ca1f4"
+      "sha256": "1d9bb2e8b2d59d1a484d9f6bf282b9dc16f1368b42a654ed2a2dffd5a7b1803c"
     },
     {
       "path": "tools/validate-run.mjs",
-      "sha256": "1dca06b9fbdf07dbd7a984d9e1519a65ce0e26404738f6082a8d4e0a9bb8a897"
+      "sha256": "9c31afef6a11aa285994308cd8aacfb93ce031d810045b1cd85198a628446301"
     }
   ]
 }

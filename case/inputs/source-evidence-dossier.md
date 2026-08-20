@@ -1,8 +1,9 @@
-# Sanitized Source-Evidence Dossier
+# Curated Source-Evidence Dossier
 
-This dossier provides bounded, anonymized excerpts supporting the factual
-inputs used in the adoption-interest comparison. It intentionally omits the
-production repository and commits.
+This dossier provides bounded excerpts supporting the factual inputs used in
+the adoption-interest comparison. It intentionally omits the production
+repository and commits because the evaluation depends only on the frozen
+evidence items listed here.
 
 ## B1: Web and API Structure
 

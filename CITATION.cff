@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the associated paper and this software artifact."
+title: "ArcAssist-Web Evaluation Artifact"
+type: software
+version: 1.0.0
+date-released: 2026-08-20
+authors:
+  - family-names: "Oliveira"
+    given-names: "Vanusa Rodrigues de"
+    affiliation: "Universidade Federal de Lavras"
+  - family-names: "Siqueira"
+    given-names: "Bento Rafael"
+    affiliation: "Universidade Federal de Lavras"
+  - family-names: "Silva"
+    given-names: "Samira Santos da"
+    affiliation: "Universidade Federal de Lavras"
+  - family-names: "Oliveira"
+    given-names: "Johnatan Alves"
+    affiliation: "Universidade Federal de Lavras"
+preferred-citation:
+  type: conference-paper
+  title: "ArcAssist-Web: Towards a Logical Reference Architecture for GenAI-Assisted Web Architectural Evolution"
+  year: 2026
+  authors:
+    - family-names: "Oliveira"
+      given-names: "Vanusa Rodrigues de"
+    - family-names: "Siqueira"
+      given-names: "Bento Rafael"
+    - family-names: "Silva"
+      given-names: "Samira Santos da"
+    - family-names: "Oliveira"
+      given-names: "Johnatan Alves"

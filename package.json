@@ -1,13 +1,28 @@
 {
-  "name": "webarch-eval-artifact",
+  "name": "arcassist-web-evaluation-artifact",
   "version": "1.0.0",
   "private": true,
+  "description": "Evaluation artifact for the ArcAssist-Web paper.",
   "type": "module",
   "scripts": {
     "validate": "node tools/validate-all.mjs",
-    "audit-anonymity": "node tools/validate-all.mjs --anonymity-only"
+    "validate:run": "node tools/validate-run.mjs",
+    "update-manifest": "node tools/update-manifest.mjs"
   },
   "engines": {
     "node": ">=20"
-  }
+  },
+  "contributors": [
+    "Vanusa Rodrigues de Oliveira",
+    "Bento Rafael Siqueira",
+    "Samira Santos da Silva",
+    "Johnatan Alves Oliveira"
+  ],
+  "keywords": [
+    "software-architecture",
+    "web-systems",
+    "generative-ai",
+    "architectural-evolution",
+    "research-artifact"
+  ]
 }
